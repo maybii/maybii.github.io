@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide</title>
+    <link type="text/css" rel="stylesheet" href="static/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="static/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="static/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="static/css/guide.css">
+
+    <script src="static/js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+    <div class="jumbotron">
+        <h1>VPN使用指南</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active">
+                    <a href="#pptp"><B>PPTP</B></a>
+                    <ul class="nav nav-lists">
+                        <li><a href="#pptp-win7">Windows7</a></li>
+                        <li><a href="#pptp-MacOS">MacOS</a></li>
+                        <li><a href="#pptp-iOS">iOS</a></li>
+                        <li><a href="#pptp-Android">Android</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#l2tp"><B>L2TP</B></a>
+                    <ul class="nav nav-lists">
+                        <li><a href="#l2tp-win7">Windows7</a></li>
+                        <li><a href="#l2tp-MacOS">MacOS</a></li>
+                        <li><a href="#l2tp-iOS">iOS</a></li>
+                        <li><a href="#l2tp-Android">Android</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="pptp">PPTP</h2>
+            <div id="pptp-win7">
+                <ol>
+                    <li>
+                        <p>进入<B>控制面板</B> 点击<B>查看网络状态和任务</B></p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击<B>设置新的连接或网络</B></p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击<B>连接到工作区</B></p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>选择<B>使用我的Internet连接</B>(VPN)</p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/4.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>填写相关信息,然后点击下一步</p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/5.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>输入用户名和密码, 然后点击<B>创建</B></p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/6.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>VPN连接已经创建，在需要连接到VPN的时候请在右下角的<B>系统托盘区</B> ，点击<B>网络适配器</B> 图标。 在弹出的列表中点击对应的VPN连接，就可以连接了</p>
+                        <div class="guide-img"><img src="static/img/pptp/win7/7.png" alt=""></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="pptp-MacOS">
+                <ol>
+                    <li>
+                        <p>打开 <B>系统偏好设置</B> , 选择 <B>网络</B> 。</p>
+                    </li>
+                    <li>
+                        <p>点击左下脚的<B>加号</B>, 在弹出的窗口中 <B>VPN类型</B> 选择 <B>PPTP</B> , 然后点击 <B>创建</B> 。</p>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>将服务器地址和用户名填入对应位置</p>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击 <B>鉴定设置</B> ，在弹出的窗口中输入 VPN密码</p>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击 <B>高级</B> , 在弹出的窗口中勾选 <B>通过VPN发送所有流量</B> 。</p>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/4.png" alt=""></div>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/5.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>最后点击右下角的 <B>应用</B> 。到这里VPN设置完成，你可以通过点击 <B>连接</B> 来连接到对应的VPN。</p>
+                        <div class="guide-img"><img src="static/img/pptp/MacOS/6.png" alt=""></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="pptp-iOS">
+                <ol>
+                    <li>
+                        <p>打开 设置,　选择 通用, 再选择 网络 , 再选择 VPN 。你将会看到下面的界面。</p>
+                        <div class="guide-img"><img src="static/img/pptp/iOS/1.png"></div>
+                    </li>
+                    <li>
+                        <p>点击 添加VPN配置</p>
+                        <div class="guide-img"><img src="static/img/pptp/iOS/2.png"></div>
+                    </li>
+                    <li>
+                        <p>在顶部的标签页中选择 PPTP , 然后填写详细信息。</p>
+                        <p> ---- 描述 - 任何名字, 比如 “pptp”</p>
+                        <p> ---- 服务器 - VPN 服务器地址(域名或者是IP地址)</p>
+                        <p> ---- 账号 - VPN 用户名</p>
+                        <p> ---- 密码 - VPN 密码</p>
+                        <p> ---- 发送所有流量 - 打开这个开关(默认是开启的)</p>
+                        <p>然后按下 存储 按钮.</p>
+                        <div class="guide-img"><img src="static/img/pptp/iOS/3.png"></div>
+                    </li>
+                    <li>
+                        <p>新的VPN配置已经成功创建。选中你要连接的vpn，然后右上角开关启动</p>
+                        <div class="guide-img"><img src="static/img/pptp/iOS/4.png"></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="pptp-Android">
+                <ol>
+                    <li>
+                        <p>打开 设置,　选择 无线和网络 , 再选择 VPN 。再选择 添加VPN 。</p>
+                        <div class="guide-img"><img src="static/img/pptp/Android/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>选择 PPTP</p>
+                        <div class="guide-img"><img src="static/img/pptp/Android/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>填写详细信息。</p>
+                        <p> ---- 描述 - 任何名字, 比如 “pptp”</p>
+                        <p> ---- 服务器 - VPN 服务器地址(域名或者是IP地址)</p>
+                        <p> ---- 账号 - VPN 用户名</p>
+                        <p> ---- 密码 - VPN 密码</p>
+                        <p>然后按下 保存 按钮.</p>
+                        <div class="guide-img"><img src="static/img/pptp/Android/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>在VPN 配置列表界面，选择刚刚创建的VPN，然后连接就可以了。</p>
+                    </li>
+                </ol>
+            </div>
+            <hr>
+            <h2 id="l2tp">L2TP</h2>
+            <div id="l2tp-win7">
+                <ol>
+                    <li>
+                        <p>进入<B>控制面板</B> 点击<B>查看网络状态和任务</B></p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击<B>设置新的连接或网络</B></p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击<B>连接到工作区</B></p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>选择<B>使用我的Internet连接</B>(VPN)</p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/4.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>填写相关信息,然后点击下一步</p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/5.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>输入用户名和密码, 然后点击<B>创建</B></p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/6.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>VPN连接已经创建，在需要连接到VPN的时候请在右下角的<B>系统托盘区</B> ，点击<B>网络适配器</B> 图标。 在弹出的列表中 右键 点击对应的VPN连接, 选择 属性 。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/7.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>在打开的属性对话框中选择 安全 标签页,然后 VPN类型 选择 L2TP/IPSec 。 然后点击 高级设置 , 在弹出的高级设置对话框中，选择 使用预共享的密钥作身份验证 , 并且 密钥 输入框中输入 L2TP　共享密钥 。 之后点击确定来保存修改。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/win7/8.png" alt=""></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="l2tp-MacOS">
+                <ol>
+                    <li>
+                        <p>打开 系统偏好设置 , 选择 网络 。</p>
+                    </li>
+                    <li>
+                        <p>点击左下脚的加号, 在弹出的窗口中 VPN类型 选择 IPSec 上的L2TP , 然后点击 创建 。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/MacOS/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>将服务器地址和用户名填入对应位置</p>
+                        <div class="guide-img"><img src="static/img/l2tp/MacOS/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击 鉴定设置 ，在弹出的窗口中输入 VPN密码 和 共享密钥 。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/MacOS/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>点击 高级 , 在弹出的窗口中勾选 通过VPN发送所有流量 。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/MacOS/4.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>最后点击右下角的 应用 。到这里VPN设置完成，你可以通过点击 连接 来连接到对应的VPN。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/MacOS/5.png" alt=""></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="l2tp-iOS">
+                <ol>
+                    <li>
+                        <p>打开 设置,　选择 通用, 再选择 网络 , 再选择 VPN 。你将会看到下面的界面。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/iOS/1.png"></div>
+                    </li>
+                    <li>
+                        <p>点击 添加VPN配置</p>
+                        <div class="guide-img"><img src="static/img/l2tp/iOS/2.png"></div>
+                    </li>
+                    <li>
+                        <p>在顶部的标签页中选择 L2TP , 然后填写详细信息。</p>
+                        <p> ---- 描述 - 任何名字, 比如 “l2tp”</p>
+                        <p> ---- 服务器 - VPN 服务器地址(域名或者是IP地址)</p>
+                        <p> ---- 账号 - VPN 用户名</p>
+                        <p> ---- 密码 - VPN 密码</p>
+                        <p> ---- 密钥 - VPN L2TP 共享密钥</p>
+                        <p> ---- 发送所有流量 - 打开这个开关(默认是开启的)</p>
+                        <p>然后按下 存储 按钮.</p>
+                        <div class="guide-img"><img src="static/img/l2tp/iOS/3.png"></div>
+                    </li>
+                    <li>
+                        <p>新的VPN配置已经成功创建。选中你要连接的vpn，然后右上角开关启动</p>
+                        <div class="guide-img"><img src="static/img/l2tp/iOS/4.png"></div>
+                    </li>
+                </ol>
+            </div>
+            <div id="l2tp-Android">
+                <ol>
+                    <li>
+                        <p>打开 设置,　选择 无线和网络 , 再选择 VPN 。再选择 添加VPN 。</p>
+                        <div class="guide-img"><img src="static/img/l2tp/Android/1.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>选择 PPTP</p>
+                        <div class="guide-img"><img src="static/img/l2tp/Android/2.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>填写详细信息。</p>
+                        <p> ---- 描述 - 任何名字, 比如 “l2tp”</p>
+                        <p> ---- 服务器 - VPN 服务器地址(域名或者是IP地址)</p>
+                        <p> ---- 账号 - VPN 用户名</p>
+                        <p> ---- 密码 - VPN 密码</p>
+                        <p> ---- IPSec预共享密钥 - VPN L2TP 共享密钥</p>
+                        <p>然后按下 保存 按钮.</p>
+                        <div class="guide-img"><img src="static/img/l2tp/Android/3.png" alt=""></div>
+                    </li>
+                    <li>
+                        <p>在VPN 配置列表界面，选择刚刚创建的VPN，然后连接就可以了。</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
